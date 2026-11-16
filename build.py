@@ -1,9 +1,14 @@
 import json
 import os
 
-DELIVERABLES_PATH = r"C:\Users\Sebi\projects\interviews-log\backend\data\deliverables.json"
-GROUPS_PATH = r"C:\Users\Sebi\projects\interviews-log\backend\data\groups.json"
-OUTPUT_HTML = r"C:\Users\Sebi\projects\entregas-finales\index.html"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+INTERVIEWS_DATA = os.path.expanduser("~/interviews-log/backend/data")
+if not os.path.exists(INTERVIEWS_DATA):
+    INTERVIEWS_DATA = r"C:\Users\Sebi\projects\interviews-log\backend\data"
+
+DELIVERABLES_PATH = os.path.join(INTERVIEWS_DATA, "deliverables.json")
+GROUPS_PATH = os.path.join(INTERVIEWS_DATA, "groups.json")
+OUTPUT_HTML = os.path.join(BASE_DIR, "index.html")
 
 with open(DELIVERABLES_PATH, "r", encoding="utf-8") as f:
     deliv_data = json.load(f)
