@@ -64,7 +64,7 @@
             <div class="text-[11px] uppercase tracking-wider text-sky-300 font-semibold">Última Actualización</div>
             <div class="text-sm font-bold text-white flex items-center gap-1.5 justify-end mt-0.5">
               <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-              2026-11-18
+              2026-11-18 11:35
             </div>
           </div>
           <button onclick="copyGeneralReport()" class="inline-flex items-center gap-1.5 bg-sky-600 hover:bg-sky-500 text-white text-xs font-semibold px-3.5 py-2.5 rounded-xl shadow-sm transition active:scale-95 border border-sky-400/40" title="Copiar informe para Discord/Slack">
@@ -294,13 +294,13 @@
   <!-- Application Logic & Embedded Data -->
   <script>
     const APP_DATA = {
-  "updated_at": "2026-11-18",
+  "updated_at": "2026-11-18 11:35",
   "summary": {
-    "total_students": 38,
-    "complete_3_of_3": 23,
-    "partial_2_of_3": 3,
-    "partial_1_of_3": 4,
-    "missing_0_of_3": 8
+    "total": 38,
+    "complete": 24,
+    "partial": 7,
+    "missing": 7,
+    "complete_percentage": 63.2
   },
   "deliverables": [
     {
@@ -1380,28 +1380,30 @@
       "group_id": 15,
       "group_name": "Futtracker",
       "tasks_pdf": {
-        "submitted": false,
-        "value": "",
-        "date": null
+        "submitted": true,
+        "value": "Tareas-Facundo-Pyznar.pdf",
+        "date": "2026-11-18",
+        "local_file": "/attachments/Tareas-Facundo-Pyznar.pdf",
+        "file_url": "/attachments/Tareas-Facundo-Pyznar.pdf"
       },
       "demo_video": {
-        "submitted": false,
-        "value": "",
-        "date": null
+        "submitted": true,
+        "value": "https://drive.google.com/file/d/1TTA6kXHDaoGwHigQfvsjIc88avaiYkhq/view?usp=drive_link",
+        "date": "2026-11-18"
       },
       "bug_video": {
-        "submitted": false,
-        "value": "",
-        "date": null
+        "submitted": true,
+        "value": "https://drive.google.com/file/d/1jNxBYIqQ1JG92sY-xQAmks52nZuLjytj/view?usp=drive_link",
+        "date": "2026-11-18"
       },
       "leader_feedback": {
         "submitted": true,
         "value": "Feedback_Lideres_5to_Lab2.xlsx"
       },
-      "completed_count": 0,
-      "status": "missing",
-      "last_email_date": "2026-11-11",
-      "notes": "Envió update escrito y Excel de líderes el 11/11. Faltan PDF de tareas, video demo y video bug."
+      "completed_count": 3,
+      "status": "complete",
+      "last_email_date": "2026-11-18",
+      "notes": "Entrega completa (3/3): PDF de tareas adjunto (Tareas-Facundo-Pyznar.pdf), video demo y video de bug en Google Drive el 18/11. Feedback de líderes completo."
     },
     {
       "student_id": "s-00f4b5a0",
@@ -2700,35 +2702,37 @@
           "group_id": 15,
           "group_name": "Futtracker",
           "tasks_pdf": {
-            "submitted": false,
-            "value": "",
-            "date": null
+            "submitted": true,
+            "value": "Tareas-Facundo-Pyznar.pdf",
+            "date": "2026-11-18",
+            "local_file": "/attachments/Tareas-Facundo-Pyznar.pdf",
+            "file_url": "/attachments/Tareas-Facundo-Pyznar.pdf"
           },
           "demo_video": {
-            "submitted": false,
-            "value": "",
-            "date": null
+            "submitted": true,
+            "value": "https://drive.google.com/file/d/1TTA6kXHDaoGwHigQfvsjIc88avaiYkhq/view?usp=drive_link",
+            "date": "2026-11-18"
           },
           "bug_video": {
-            "submitted": false,
-            "value": "",
-            "date": null
+            "submitted": true,
+            "value": "https://drive.google.com/file/d/1jNxBYIqQ1JG92sY-xQAmks52nZuLjytj/view?usp=drive_link",
+            "date": "2026-11-18"
           },
           "leader_feedback": {
             "submitted": true,
             "value": "Feedback_Lideres_5to_Lab2.xlsx"
           },
-          "completed_count": 0,
-          "status": "missing",
-          "last_email_date": "2026-11-11",
-          "notes": "Envió update escrito y Excel de líderes el 11/11. Faltan PDF de tareas, video demo y video bug."
+          "completed_count": 3,
+          "status": "complete",
+          "last_email_date": "2026-11-18",
+          "notes": "Entrega completa (3/3): PDF de tareas adjunto (Tareas-Facundo-Pyznar.pdf), video demo y video de bug en Google Drive el 18/11. Feedback de líderes completo."
         }
       ],
       "total_students": 2,
-      "complete_students": 0,
+      "complete_students": 1,
       "expected_items": 6,
-      "submitted_items": 0,
-      "percentage": 0.0
+      "submitted_items": 3,
+      "percentage": 50.0
     },
     {
       "id": 16,
