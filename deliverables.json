@@ -1,0 +1,1172 @@
+{
+  "updated_at": "2026-11-18",
+  "summary": {
+    "total_students": 38,
+    "complete_3_of_3": 23,
+    "partial_2_of_3": 3,
+    "partial_1_of_3": 4,
+    "missing_0_of_3": 8
+  },
+  "deliverables": [
+    {
+      "student_id": "s-d0c077a9",
+      "student_name": "De Franco, Candela",
+      "group_id": 1,
+      "group_name": "Cinematch",
+      "tasks_pdf": {
+        "submitted": false,
+        "value": "",
+        "date": null
+      },
+      "demo_video": {
+        "submitted": false,
+        "value": "",
+        "date": null
+      },
+      "bug_video": {
+        "submitted": false,
+        "value": "",
+        "date": null
+      },
+      "leader_feedback": {
+        "submitted": true,
+        "value": "Feedback.xlsx"
+      },
+      "completed_count": 0,
+      "status": "missing",
+      "last_email_date": "2026-11-12",
+      "notes": "Solo envió planilla Feedback.xlsx de líderes de 5to (12/11). Faltan PDF de tareas, video demo y video bug."
+    },
+    {
+      "student_id": "s-828aaf07",
+      "student_name": "Bautista Dhipolito",
+      "group_id": 1,
+      "group_name": "Cinematch",
+      "tasks_pdf": {
+        "submitted": false,
+        "value": "",
+        "date": null
+      },
+      "demo_video": {
+        "submitted": true,
+        "value": "https://youtu.be/nEXQm1WlxxU",
+        "date": "2026-11-15"
+      },
+      "bug_video": {
+        "submitted": true,
+        "value": "https://youtu.be/nEXQm1WlxxU",
+        "date": "2026-11-15"
+      },
+      "leader_feedback": {
+        "submitted": true,
+        "value": "Feedback_Lideres_5to_Lab2-Bautista DHipolito.xlsx"
+      },
+      "completed_count": 2,
+      "status": "partial",
+      "last_email_date": "2026-11-15",
+      "notes": "Envió video unificado (YouTube: demo + bug + explicación de tareas) y Excel de feedback el 15/11. Queda pendiente la recepción del documento PDF con el detalle de tareas."
+    },
+    {
+      "student_id": "s-913c4935",
+      "student_name": "Caporaso Tomas",
+      "group_id": 1,
+      "group_name": "Cinematch",
+      "tasks_pdf": {
+        "submitted": false,
+        "value": "",
+        "date": null
+      },
+      "demo_video": {
+        "submitted": false,
+        "value": "",
+        "date": null
+      },
+      "bug_video": {
+        "submitted": false,
+        "value": "",
+        "date": null
+      },
+      "leader_feedback": {
+        "submitted": true,
+        "value": "Feedback_Lideres_5to_Lab2_completo.xlsx"
+      },
+      "completed_count": 0,
+      "status": "missing",
+      "last_email_date": "2026-11-12",
+      "notes": "Solo envió Feedback_Lideres_5to_Lab2_completo.xlsx (12/11). Faltan PDF de tareas, video demo y video bug."
+    },
+    {
+      "student_id": "s-d2a09c12",
+      "student_name": "Serebrinsky Thiago",
+      "group_id": 2,
+      "group_name": "Zest",
+      "tasks_pdf": {
+        "submitted": true,
+        "value": "https://docs.google.com/document/d/1vwP5uNMUzqHk_0w6KcBJFyqQAjNsZAXQ8CFrlkg8CUU/edit?usp=sharing",
+        "date": "2026-11-16"
+      },
+      "demo_video": {
+        "submitted": true,
+        "value": "https://www.loom.com/share/422d450980a741b889b06892fa417f96",
+        "date": "2026-11-16"
+      },
+      "bug_video": {
+        "submitted": true,
+        "value": "https://www.loom.com/share/179c21ac1d1f4f6a9ee8b61eba7fd3ce",
+        "date": "2026-11-16"
+      },
+      "leader_feedback": {
+        "submitted": true,
+        "value": "Feedback_Lideres_5to_Lab2_Individual.xlsx"
+      },
+      "completed_count": 3,
+      "status": "complete",
+      "last_email_date": "2026-11-16",
+      "notes": "Entrega completa (3/3): 2 videos Loom y documento de tickets enviados el 16/11."
+    },
+    {
+      "student_id": "s-fc49a4d9",
+      "student_name": "Blanco Pan Santiago",
+      "group_id": 2,
+      "group_name": "Zest",
+      "tasks_pdf": {
+        "submitted": true,
+        "value": "ticketsZest.pdf",
+        "date": "2026-11-13"
+      },
+      "demo_video": {
+        "submitted": true,
+        "value": "copy_7CFE458E-D200-4DD2-AA36-0F09C6BF98C5.MOV",
+        "date": "2026-11-13"
+      },
+      "bug_video": {
+        "submitted": true,
+        "value": "https://youtu.be/BsRUMyc9CtE?si=pIgYGXhZMDNLjMBA (big zest)",
+        "date": "2026-11-11"
+      },
+      "leader_feedback": {
+        "submitted": true,
+        "value": "Feedback_Lideres_Santiago_Blanco.xlsx"
+      },
+      "completed_count": 3,
+      "status": "complete",
+      "last_email_date": "2026-11-13",
+      "notes": "Entrega completa (3/3): bug el 11/11; PDF de tickets y video demo (.MOV) el 13/11."
+    },
+    {
+      "student_id": "s-723e58fc",
+      "student_name": "Zampella Lucio",
+      "group_id": 3,
+      "group_name": "Planify",
+      "tasks_pdf": {
+        "submitted": true,
+        "value": "PDF de tareas realizadas (adjunto 16/11)",
+        "date": "2026-11-16",
+        "local_file": "/attachments/Lucio-Zampella-resumen.pdf",
+        "file_url": "/attachments/Lucio-Zampella-resumen.pdf"
+      },
+      "demo_video": {
+        "submitted": true,
+        "value": "https://youtu.be/XaqPOvVf6So?si=YGWF0nJAUuuesAIs",
+        "date": "2026-11-15"
+      },
+      "bug_video": {
+        "submitted": true,
+        "value": "https://youtu.be/L-LsLS5m5k0?si=zCznx-rkK4xHAr02",
+        "date": "2026-11-15"
+      },
+      "leader_feedback": {
+        "submitted": true,
+        "value": "Feedback_Lideres_5to_Lab2_PLANIFY.xlsx"
+      },
+      "completed_count": 3,
+      "status": "complete",
+      "last_email_date": "2026-11-16",
+      "notes": "Entrega completa (3/3): videos demo y bug el 15/11; PDF de tareas el 16/11."
+    },
+    {
+      "student_id": "s-7173e477",
+      "student_name": "Betelu Gallipoli Lucia",
+      "group_id": 3,
+      "group_name": "Planify",
+      "tasks_pdf": {
+        "submitted": false,
+        "value": "",
+        "date": null
+      },
+      "demo_video": {
+        "submitted": true,
+        "value": "Screen Recording 2026-11-15 at 11.47.29 PM.mov (SharePoint/adjunto)",
+        "date": "2026-11-16"
+      },
+      "bug_video": {
+        "submitted": false,
+        "value": "",
+        "date": null
+      },
+      "leader_feedback": {
+        "submitted": true,
+        "value": "Feedback_Lideres_5to_Lab2_PLANIFY.xlsx (en copia)"
+      },
+      "completed_count": 1,
+      "status": "partial",
+      "last_email_date": "2026-11-16",
+      "notes": "Envió Screen Recording .mov el 16/11; faltan el otro video y el PDF de tareas."
+    },
+    {
+      "student_id": "s-94b46f72",
+      "student_name": "García Ferrer, Juan Cruz",
+      "group_id": 4,
+      "group_name": "Pitstop",
+      "tasks_pdf": {
+        "submitted": true,
+        "value": "Tareas del cuatrimestre - PitStop - JuanCruzGarciaFerrer.pdf",
+        "date": "2026-11-17",
+        "local_file": "/attachments/Tareas_del_cuatrimestre_PitStop_JuanCruzGarciaFerrer.pdf",
+        "file_url": "/attachments/Tareas_del_cuatrimestre_PitStop_JuanCruzGarciaFerrer.pdf"
+      },
+      "demo_video": {
+        "submitted": true,
+        "value": "https://youtu.be/5qzviVrYiSU",
+        "date": "2026-11-17"
+      },
+      "bug_video": {
+        "submitted": true,
+        "value": "https://youtu.be/xbWWp7_MrzY",
+        "date": "2026-11-06"
+      },
+      "leader_feedback": {
+        "submitted": true,
+        "value": "Evaluacioěn de Liěderes Juan Cruz Garcia Ferrer.numbers",
+        "local_file": "/attachments/Evaluacion_de_Lideres_JuanCruzGarciaFerrer.numbers",
+        "file_url": "/attachments/Evaluacion_de_Lideres_JuanCruzGarciaFerrer.numbers"
+      },
+      "completed_count": 3,
+      "status": "complete",
+      "last_email_date": "2026-11-17",
+      "notes": "Entrega completa (3/3): PDF de tareas del cuatrimestre y video demo en YouTube (17/11), video de bug en YouTube (06/11) y planilla de líderes."
+    },
+    {
+      "student_id": "s-843fa4af",
+      "student_name": "Gioino, Juan Manuel",
+      "group_id": 4,
+      "group_name": "Pitstop",
+      "tasks_pdf": {
+        "submitted": false,
+        "value": "",
+        "date": null
+      },
+      "demo_video": {
+        "submitted": false,
+        "value": "",
+        "date": null
+      },
+      "bug_video": {
+        "submitted": false,
+        "value": "",
+        "date": null
+      },
+      "leader_feedback": {
+        "submitted": true,
+        "value": "Evaluación de Líderes (1).xlsx"
+      },
+      "completed_count": 0,
+      "status": "missing",
+      "last_email_date": "2026-11-11",
+      "notes": "Envió update escrito y Excel de líderes el 11/11. Faltan PDF de tareas, video demo y video bug."
+    },
+    {
+      "student_id": "s-352c3099",
+      "student_name": "Siaba, Ignacio",
+      "group_id": 4,
+      "group_name": "Pitstop",
+      "tasks_pdf": {
+        "submitted": true,
+        "value": "Informe_tareas_Ignacio_Siaba_PitStop.pdf",
+        "date": "2026-11-14",
+        "local_file": "/attachments/Informe_tareas_Ignacio_Siaba_PitStop.pdf",
+        "file_url": "/attachments/Informe_tareas_Ignacio_Siaba_PitStop.pdf"
+      },
+      "demo_video": {
+        "submitted": true,
+        "value": "https://youtu.be/iZyPV85Get4",
+        "date": "2026-11-14"
+      },
+      "bug_video": {
+        "submitted": true,
+        "value": "https://youtu.be/_2_V7bnxtYA",
+        "date": "2026-11-11"
+      },
+      "leader_feedback": {
+        "submitted": true,
+        "value": "Feedback_Lideres_5to_Lab2_individual.xlsx"
+      },
+      "completed_count": 3,
+      "status": "complete",
+      "last_email_date": "2026-11-14",
+      "notes": "Entrega completa (3/3): bug el 11/11; PDF de tareas y demo YouTube el 14/11."
+    },
+    {
+      "student_id": "s-df6f3dd5",
+      "student_name": "Cousido, Martina",
+      "group_id": 5,
+      "group_name": "Watch Party",
+      "tasks_pdf": {
+        "submitted": true,
+        "value": "Entrega Lab (1).pdf",
+        "date": "2026-11-06",
+        "local_file": "/attachments/Entrega_Lab_1_Martina_Cousido.pdf",
+        "file_url": "/attachments/Entrega_Lab_1_Martina_Cousido.pdf"
+      },
+      "demo_video": {
+        "submitted": true,
+        "value": "DisenÞo sin tiìtulo (1).mp4 (video adjunto)",
+        "date": "2026-11-17",
+        "local_file": "/attachments/Martina_Cousido_demo.mp4",
+        "file_url": "/attachments/Martina_Cousido_demo.mp4"
+      },
+      "bug_video": {
+        "submitted": true,
+        "value": "Diseño sin título.mp4",
+        "date": "2026-11-06",
+        "local_file": "/attachments/Martina_Cousido_demo.mp4",
+        "file_url": "/attachments/Martina_Cousido_demo.mp4"
+      },
+      "leader_feedback": {
+        "submitted": true,
+        "value": "Incluido en Entrega Lab (1).pdf"
+      },
+      "completed_count": 3,
+      "status": "complete",
+      "last_email_date": "2026-11-17",
+      "notes": "Entrega completa (3/3): video demo adjunto (17/11), PDF de tareas y feedback + video de bug (06/11)."
+    },
+    {
+      "student_id": "s-7faf0b32",
+      "student_name": "Garcia, Ignacio",
+      "group_id": 5,
+      "group_name": "Watch Party",
+      "tasks_pdf": {
+        "submitted": true,
+        "value": "WatchParty_PRs_Ignacio_Garcia.pdf",
+        "date": "2026-11-15",
+        "local_file": "/attachments/WatchParty_PRs_Ignacio_Garcia.pdf",
+        "file_url": "/attachments/WatchParty_PRs_Ignacio_Garcia.pdf"
+      },
+      "demo_video": {
+        "submitted": true,
+        "value": "https://alumniiaeedu-my.sharepoint.com/:v:/g/personal/igarcia1_mail_austral_edu_ar/IQA_IMk5lavWQ7LGQRCo5e1eAZ3dnpBlhCKr3gWtHfxnc-k",
+        "date": "2026-11-15"
+      },
+      "bug_video": {
+        "submitted": true,
+        "value": "https://alumniiaeedu-my.sharepoint.com/:v:/g/personal/igarcia1_mail_austral_edu_ar/IQDP1hts-uMPQqymDnRxf0LFAX1e4TRX8yxumY9xxsQyOoU",
+        "date": "2026-11-15"
+      },
+      "leader_feedback": {
+        "submitted": true,
+        "value": "Google Sheets feedback jefes"
+      },
+      "completed_count": 3,
+      "status": "complete",
+      "last_email_date": "2026-11-15",
+      "notes": "Entrega completa (3/3): reenvió bug + update el 15/11 y mandó PDF de PRs + video demo el 15/11."
+    },
+    {
+      "student_id": "s-35ff39a5",
+      "student_name": "Scherer Keen, Tomas",
+      "group_id": 5,
+      "group_name": "Watch Party",
+      "tasks_pdf": {
+        "submitted": true,
+        "value": "Tareas_Cuatrimestre_Tomas_Scherer_Keen.pdf",
+        "date": "2026-11-17",
+        "local_file": "/attachments/Tareas_Cuatrimestre_Tomas_Scherer_Keen.pdf",
+        "file_url": "/attachments/Tareas_Cuatrimestre_Tomas_Scherer_Keen.pdf"
+      },
+      "demo_video": {
+        "submitted": true,
+        "value": "https://youtu.be/6wGKgL_X1oE",
+        "date": "2026-11-17"
+      },
+      "bug_video": {
+        "submitted": true,
+        "value": "https://youtu.be/99dHnoredvw",
+        "date": "2026-11-15"
+      },
+      "leader_feedback": {
+        "submitted": true,
+        "value": "Feedback_Lideres_5to_Lab2_completo.xlsx"
+      },
+      "completed_count": 3,
+      "status": "complete",
+      "last_email_date": "2026-11-17",
+      "notes": "Entrega completa (3/3): PDF con resumen de 68 tickets y video demo en YouTube (17/11), video de bug en YouTube (15/11) y feedback de líderes."
+    },
+    {
+      "student_id": "s-84e2c26f",
+      "student_name": "Cesio, Fernando",
+      "group_id": 6,
+      "group_name": "Nutria",
+      "tasks_pdf": {
+        "submitted": true,
+        "value": "Issues de Fer Cesio.pdf",
+        "date": "2026-11-15",
+        "local_file": "/attachments/Issues_de_Fer_Cesio.pdf",
+        "file_url": "/attachments/Issues_de_Fer_Cesio.pdf"
+      },
+      "demo_video": {
+        "submitted": true,
+        "value": "https://youtu.be/ealjKK6OCKU",
+        "date": "2026-11-15"
+      },
+      "bug_video": {
+        "submitted": true,
+        "value": "video-bug-labII.mp4",
+        "date": "2026-11-11"
+      },
+      "leader_feedback": {
+        "submitted": true,
+        "value": "Feedback_Lideres_5to_Lab2.xlsx"
+      },
+      "completed_count": 3,
+      "status": "complete",
+      "last_email_date": "2026-11-15",
+      "notes": "Entrega completa (3/3): video-bug-labII.mp4 + Excel el 11/11; Issues de Fer Cesio.pdf + demo YouTube el 15/11."
+    },
+    {
+      "student_id": "s-a2a9a932",
+      "student_name": "Fedunkiw, Lara",
+      "group_id": 6,
+      "group_name": "Nutria",
+      "tasks_pdf": {
+        "submitted": true,
+        "value": "Informe_final_contribuciones_NutrIA_Lara_Fedunkiw.pdf",
+        "date": "2026-11-17",
+        "local_file": "/attachments/Informe_final_contribuciones_NutrIA_Lara_Fedunkiw.pdf",
+        "file_url": "/attachments/Informe_final_contribuciones_NutrIA_Lara_Fedunkiw.pdf"
+      },
+      "demo_video": {
+        "submitted": true,
+        "value": "https://alumniiaeedu-my.sharepoint.com/:v:/g/personal/lfedunkiw_mail_austral_edu_ar/IQBq6PaQ5hibRIrJtsE_a1UJAWyLBuuciTB8BBIhIcKjkns",
+        "date": "2026-11-17"
+      },
+      "bug_video": {
+        "submitted": true,
+        "value": "Mi película.mov",
+        "date": "2026-11-11"
+      },
+      "leader_feedback": {
+        "submitted": true,
+        "value": "Feedback_Lideres_NutrIA_Lara_EVALUACIONES_PERSONALIZADAS.pdf",
+        "local_file": "/attachments/Feedback_Lideres_NutrIA_Lara_EVALUACIONES_PERSONALIZADAS.pdf",
+        "file_url": "/attachments/Feedback_Lideres_NutrIA_Lara_EVALUACIONES_PERSONALIZADAS.pdf"
+      },
+      "completed_count": 3,
+      "status": "complete",
+      "last_email_date": "2026-11-17",
+      "notes": "Entrega completa (3/3): PDF de contribuciones y video demo en SharePoint (17/11), video de bug explicativo (11/11) y feedback de líderes."
+    },
+    {
+      "student_id": "s-57345877",
+      "student_name": "Rosales Torres, María José",
+      "group_id": 6,
+      "group_name": "Nutria",
+      "tasks_pdf": {
+        "submitted": false,
+        "value": "",
+        "date": null
+      },
+      "demo_video": {
+        "submitted": false,
+        "value": "",
+        "date": null
+      },
+      "bug_video": {
+        "submitted": true,
+        "value": "https://youtu.be/nx3tFqVU5nQ?si=d2-azFEggCbiRuxe",
+        "date": "2026-11-12"
+      },
+      "leader_feedback": {
+        "submitted": true,
+        "value": "Feedback_Lideres_5to_Lab2-1.xlsx"
+      },
+      "completed_count": 1,
+      "status": "partial",
+      "last_email_date": "2026-11-12",
+      "notes": "Envió link de YouTube del bug y Excel de líderes el 12/11. Faltan PDF de tareas y video demo."
+    },
+    {
+      "student_id": "s-06776766",
+      "student_name": "Martinez, Trinidad",
+      "group_id": 7,
+      "group_name": "Study Arena",
+      "tasks_pdf": {
+        "submitted": true,
+        "value": "Informe_Trabajo_Trinidad_Martinez_Study_Arena.pdf",
+        "date": "2026-11-11",
+        "local_file": "/attachments/Informe_Trabajo_Trinidad_Martinez_Study_Arena.pdf",
+        "file_url": "/attachments/Informe_Trabajo_Trinidad_Martinez_Study_Arena.pdf"
+      },
+      "demo_video": {
+        "submitted": true,
+        "value": "https://youtu.be/hqRVxqvd-aA?si=27J82hAJ0FYHsC1z",
+        "date": "2026-11-14"
+      },
+      "bug_video": {
+        "submitted": true,
+        "value": "https://youtu.be/ND54HsmWO7U",
+        "date": "2026-11-11"
+      },
+      "leader_feedback": {
+        "submitted": true,
+        "value": "Feedback_Lideres_5to_Lab2_Trinidad_Martinez.xlsx"
+      },
+      "completed_count": 3,
+      "status": "complete",
+      "last_email_date": "2026-11-14",
+      "notes": "Entrega completa (3/3): PDF, bug y Excel el 11/11; demo YouTube el 14/11."
+    },
+    {
+      "student_id": "s-7740dd32",
+      "student_name": "Seré, Juan José",
+      "group_id": 7,
+      "group_name": "Study Arena",
+      "tasks_pdf": {
+        "submitted": true,
+        "value": "resumen_tareas.pdf",
+        "date": "2026-11-15",
+        "local_file": "/attachments/resumen_tareas_Juan_Jose_Sere.pdf",
+        "file_url": "/attachments/resumen_tareas_Juan_Jose_Sere.pdf"
+      },
+      "demo_video": {
+        "submitted": true,
+        "value": "https://alumniiaeedu-my.sharepoint.com/:v:/g/personal/jjsere_mail_austral_edu_ar/IQC6exnjpwe5Qats0qsxbFj9AatiZtMV4ltPguWXkmOgUas?referrer=Outlook.Web&referrerScenario=email-linkwithembed",
+        "date": "2026-11-15"
+      },
+      "bug_video": {
+        "submitted": true,
+        "value": "2026-11-16 11-39-11.mp4 (video adjunto)",
+        "date": "2026-11-16",
+        "local_file": "/attachments/Juan_Jose_Sere_bug_2026-11-16.mp4",
+        "file_url": "/attachments/Juan_Jose_Sere_bug_2026-11-16.mp4"
+      },
+      "leader_feedback": {
+        "submitted": true,
+        "value": "Feedback_Lideres_5to_Lab2_respondido.ods"
+      },
+      "completed_count": 3,
+      "status": "complete",
+      "last_email_date": "2026-11-16",
+      "notes": "Entrega completa (3/3): PDF de tareas y video demo (15/11), video de bug explicativo adjunto (16/11) y feedback de líderes."
+    },
+    {
+      "student_id": "s-16bf763e",
+      "student_name": "Bregoli, Tomas",
+      "group_id": 8,
+      "group_name": "Grade-m8",
+      "tasks_pdf": {
+        "submitted": true,
+        "value": "Reporte Lab 2 Tomás Bregoli.pdf",
+        "date": "2026-11-15",
+        "local_file": "/attachments/Reporte_Lab2_Tomas_Bregoli.pdf",
+        "file_url": "/attachments/Reporte_Lab2_Tomas_Bregoli.pdf"
+      },
+      "demo_video": {
+        "submitted": true,
+        "value": "https://youtu.be/c17d7O-vp0Y",
+        "date": "2026-11-15"
+      },
+      "bug_video": {
+        "submitted": true,
+        "value": "https://youtu.be/74-vVKiTuNw",
+        "date": "2026-11-15"
+      },
+      "leader_feedback": {
+        "submitted": true,
+        "value": "Feedback_Lideres_5to_Lab2 (1).xlsx"
+      },
+      "completed_count": 3,
+      "status": "complete",
+      "last_email_date": "2026-11-15",
+      "notes": "Entrega completa (3/3) el 15/11 + Excel de líderes el 11/11."
+    },
+    {
+      "student_id": "s-a33a0a28",
+      "student_name": "García Rosselli, Facundo",
+      "group_id": 8,
+      "group_name": "Grade-m8",
+      "tasks_pdf": {
+        "submitted": true,
+        "value": "Reporte de trabajo semanal.pdf",
+        "date": "2026-11-16",
+        "local_file": "/attachments/Reporte_de_trabajo_semanal_Facundo_Garcia_Rosselli.pdf",
+        "file_url": "/attachments/Reporte_de_trabajo_semanal_Facundo_Garcia_Rosselli.pdf"
+      },
+      "demo_video": {
+        "submitted": true,
+        "value": "https://alumniiaeedu-my.sharepoint.com/:v:/g/personal/fgarciarosselli_mail_austral_edu_ar/IQAbF_RyuuP6Rofgc7kyvLH-Aenby_KS_YbIorTp67Jcvrs?referrer=Outlook.Web&referrerScenario=email-linkwithembed",
+        "date": "2026-11-16"
+      },
+      "bug_video": {
+        "submitted": true,
+        "value": "https://alumniiaeedu-my.sharepoint.com/:v:/g/personal/fgarciarosselli_mail_austral_edu_ar/IQBL0NopMwNGSrdgmc98QezPAcoZtIuzMSFJ-WYhEfeuQME",
+        "date": "2026-11-09"
+      },
+      "leader_feedback": {
+        "submitted": true,
+        "value": "Feedback_Lideres_5to_Lab2.xlsx"
+      },
+      "completed_count": 3,
+      "status": "complete",
+      "last_email_date": "2026-11-16",
+      "notes": "Entrega completa (3/3): video demo y reporte semanal en PDF (16/11), video de bug en SharePoint (09/11) y feedback de líderes."
+    },
+    {
+      "student_id": "s-8b3acdf1",
+      "student_name": "Luciano Renkine",
+      "group_id": 8,
+      "group_name": "Grade-m8",
+      "tasks_pdf": {
+        "submitted": true,
+        "value": "Tareas_Cuatrimestre_Lab2_Renkine.pdf",
+        "date": "2026-11-17",
+        "local_file": "/attachments/Tareas_Cuatrimestre_Lab2_Renkine.pdf",
+        "file_url": "/attachments/Tareas_Cuatrimestre_Lab2_Renkine.pdf"
+      },
+      "demo_video": {
+        "submitted": true,
+        "value": "https://youtu.be/cGnEHHaPm40",
+        "date": "2026-11-13"
+      },
+      "bug_video": {
+        "submitted": true,
+        "value": "https://youtu.be/yI5CAy1Cc7U",
+        "date": "2026-11-13"
+      },
+      "leader_feedback": {
+        "submitted": true,
+        "value": "Feedback_Lideres_5to_Lab2_Renkine.xlsx"
+      },
+      "completed_count": 3,
+      "status": "complete",
+      "last_email_date": "2026-11-17",
+      "notes": "Entrega completa (3/3): PDF de tareas semana a semana (17/11), videos demo y bug en YouTube (13/11) y feedback de líderes."
+    },
+    {
+      "student_id": "s-d8f47780",
+      "student_name": "Acha Kennard, Mateo",
+      "group_id": 9,
+      "group_name": "Zervi",
+      "tasks_pdf": {
+        "submitted": false,
+        "value": "",
+        "date": null
+      },
+      "demo_video": {
+        "submitted": false,
+        "value": "",
+        "date": null
+      },
+      "bug_video": {
+        "submitted": false,
+        "value": "",
+        "date": null
+      },
+      "leader_feedback": {
+        "submitted": true,
+        "value": "Feedback_Lideres_5to_Lab2.xlsx"
+      },
+      "completed_count": 0,
+      "status": "missing",
+      "last_email_date": "2026-11-11",
+      "notes": "Envió update breve y Excel de líderes el 11/11. Faltan PDF de tareas, video demo y video bug."
+    },
+    {
+      "student_id": "s-ee54cc5c",
+      "student_name": "Perez Menendez, Matias",
+      "group_id": 9,
+      "group_name": "Zervi",
+      "tasks_pdf": {
+        "submitted": false,
+        "value": "",
+        "date": null
+      },
+      "demo_video": {
+        "submitted": false,
+        "value": "",
+        "date": null
+      },
+      "bug_video": {
+        "submitted": false,
+        "value": "",
+        "date": null
+      },
+      "leader_feedback": {
+        "submitted": false,
+        "value": ""
+      },
+      "completed_count": 0,
+      "status": "missing",
+      "last_email_date": null,
+      "notes": "No envió correos en noviembre."
+    },
+    {
+      "student_id": "s-a1b3963a",
+      "student_name": "Hani, Guadalupe",
+      "group_id": 10,
+      "group_name": "Conexia",
+      "tasks_pdf": {
+        "submitted": false,
+        "value": "",
+        "date": null
+      },
+      "demo_video": {
+        "submitted": false,
+        "value": "",
+        "date": null
+      },
+      "bug_video": {
+        "submitted": false,
+        "value": "",
+        "date": null
+      },
+      "leader_feedback": {
+        "submitted": false,
+        "value": ""
+      },
+      "completed_count": 0,
+      "status": "missing",
+      "last_email_date": null,
+      "notes": "No envió correos de entregas en noviembre (solo su update del 01/11 ya registrado)."
+    },
+    {
+      "student_id": "s-871d0471",
+      "student_name": "Nogueira, Martiniano",
+      "group_id": 10,
+      "group_name": "Conexia",
+      "tasks_pdf": {
+        "submitted": true,
+        "value": "tareas-cuatrimestre (1).pdf",
+        "date": "2026-11-14",
+        "local_file": "/attachments/tareas-cuatrimestre-Martiniano-Nogueira.pdf",
+        "file_url": "/attachments/tareas-cuatrimestre-Martiniano-Nogueira.pdf"
+      },
+      "demo_video": {
+        "submitted": true,
+        "value": "https://alumniiaeedu-my.sharepoint.com/:v:/g/personal/mnogueira_mail_austral_edu_ar/IQDxdVatukWiQqSxEwJT631CAb0zxyVjlFYr6TxPmOhAXIE?referrer=Outlook.Web&referrerScenario=email-linkwithembed",
+        "date": "2026-11-14"
+      },
+      "bug_video": {
+        "submitted": false,
+        "value": "",
+        "date": null
+      },
+      "leader_feedback": {
+        "submitted": true,
+        "value": "Feedback_Lideres_5to_Lab2_Conexia).xlsx"
+      },
+      "completed_count": 2,
+      "status": "partial",
+      "last_email_date": "2026-11-14",
+      "notes": "Envió PDF de tareas y video demo (CONEXIA - DEMO.mp4) el 14/11 (y Excel el 12/11). Falta video del bug."
+    },
+    {
+      "student_id": "s-c11a7244",
+      "student_name": "Juan Rudolph",
+      "group_id": 11,
+      "group_name": "Sportmatch",
+      "tasks_pdf": {
+        "submitted": true,
+        "value": "SportMatch-Juan-Rudolph.pdf",
+        "date": "2026-11-15",
+        "local_file": "/attachments/SportMatch-Juan-Rudolph.pdf",
+        "file_url": "/attachments/SportMatch-Juan-Rudolph.pdf"
+      },
+      "demo_video": {
+        "submitted": true,
+        "value": "https://youtu.be/q9deb2z4QDI?feature=shared",
+        "date": "2026-11-15"
+      },
+      "bug_video": {
+        "submitted": true,
+        "value": "40571761-5911-458A-A861-04D13795AA40.mov (Informe Lab II)",
+        "date": "2026-11-11"
+      },
+      "leader_feedback": {
+        "submitted": true,
+        "value": "Feedback_Lideres_5to_Lab2 Juan Rudolph.xlsx"
+      },
+      "completed_count": 3,
+      "status": "complete",
+      "last_email_date": "2026-11-15",
+      "notes": "Entrega completa (3/3): video .mov + Excel en 'Informe Lab II' (11/11); PDF y demo YouTube el 15/11."
+    },
+    {
+      "student_id": "s-a647d8da",
+      "student_name": "Pacheco, Ignacio",
+      "group_id": 11,
+      "group_name": "Sportmatch",
+      "tasks_pdf": {
+        "submitted": true,
+        "value": "Tareas-Ignacio-Pacheco-SportMatch.pdf",
+        "date": "2026-11-14",
+        "local_file": "/attachments/Tareas-Ignacio-Pacheco-SportMatch.pdf",
+        "file_url": "/attachments/Tareas-Ignacio-Pacheco-SportMatch.pdf"
+      },
+      "demo_video": {
+        "submitted": true,
+        "value": "https://youtu.be/DCxWHeQ1hZY?si=V7yB2espRiSr69mX",
+        "date": "2026-11-14"
+      },
+      "bug_video": {
+        "submitted": true,
+        "value": "YouTube: Sportmatch: el asistente de IA deja un lugar menos en el cupo",
+        "date": "2026-11-11"
+      },
+      "leader_feedback": {
+        "submitted": true,
+        "value": "Feedback_Lideres_5to_Lab2_Ignacio_Pacheco.xlsx"
+      },
+      "completed_count": 3,
+      "status": "complete",
+      "last_email_date": "2026-11-14",
+      "notes": "Entrega completa (3/3) + spot publicitario extra (https://youtu.be/UVYjzBBoPAI?si=StUamitpeMUFgjFg)."
+    },
+    {
+      "student_id": "s-0768e5d4",
+      "student_name": "Siaba, Juan Francisco",
+      "group_id": 11,
+      "group_name": "Sportmatch",
+      "tasks_pdf": {
+        "submitted": true,
+        "value": "Tareas hechas Sportmatch.pdf",
+        "date": "2026-11-13"
+      },
+      "demo_video": {
+        "submitted": true,
+        "value": "https://drive.google.com/file/d/1Ch-501oJnLYzJu9pwcXLbQj_0jXjmLe7/view?usp=drive_web",
+        "date": "2026-11-13"
+      },
+      "bug_video": {
+        "submitted": true,
+        "value": "https://drive.google.com/file/d/17b7ebEUU9FtOEDcoVf7-HFG09OzZZRrA/view?usp=drive_web",
+        "date": "2026-11-13"
+      },
+      "leader_feedback": {
+        "submitted": true,
+        "value": "4 archivos individuales .xlsx (11/11)"
+      },
+      "completed_count": 3,
+      "status": "complete",
+      "last_email_date": "2026-11-13",
+      "notes": "Entrega completa (3/3) el 13/11 + 4 evaluaciones de líderes el 11/11."
+    },
+    {
+      "student_id": "s-8a942c0d",
+      "student_name": "Diaz, Mateo",
+      "group_id": 12,
+      "group_name": "Splitit",
+      "tasks_pdf": {
+        "submitted": true,
+        "value": "Historias de usuario resueltas - Mateo Diaz (1).pdf",
+        "date": "2026-11-16",
+        "local_file": "/attachments/Historias_de_usuario_resueltas_Mateo_Diaz.pdf",
+        "file_url": "/attachments/Historias_de_usuario_resueltas_Mateo_Diaz.pdf"
+      },
+      "demo_video": {
+        "submitted": true,
+        "value": "https://drive.google.com/file/d/1RVbrIB9d4sm4yOY3R09PKo0RuOgnZ9hI/view?usp=drive_link",
+        "date": "2026-11-16"
+      },
+      "bug_video": {
+        "submitted": true,
+        "value": "https://drive.google.com/file/d/1tO-sNLqDYmYgeqg3fo1v13onQNva0AxX/view?usp=sharing",
+        "date": "2026-11-16"
+      },
+      "leader_feedback": {
+        "submitted": true,
+        "value": "MATEO_DIAZ_FEEDBACK_Lab2.numbers"
+      },
+      "completed_count": 3,
+      "status": "complete",
+      "last_email_date": "2026-11-16",
+      "notes": "Entrega completa (3/3): videos demo y bug en Google Drive y PDF con historias de usuario resueltas (16/11), más feedback de líderes."
+    },
+    {
+      "student_id": "s-26292f16",
+      "student_name": "Ocampo, Felicitas",
+      "group_id": 12,
+      "group_name": "Splitit",
+      "tasks_pdf": {
+        "submitted": true,
+        "value": "tareas-splitit.pdf",
+        "date": "2026-11-14",
+        "local_file": "/attachments/tareas-splitit-Felicitas-Ocampo.pdf",
+        "file_url": "/attachments/tareas-splitit-Felicitas-Ocampo.pdf"
+      },
+      "demo_video": {
+        "submitted": true,
+        "value": "https://alumniiaeedu-my.sharepoint.com/:v:/g/personal/focampo_mail_austral_edu_ar/IQD3a5RrPXGuQqdhMuRLe4TLAe_S1Vr9rurforowLR2zAks",
+        "date": "2026-11-14"
+      },
+      "bug_video": {
+        "submitted": true,
+        "value": "WhatsApp Video 2026-11-14 at 17.49.48.mp4",
+        "date": "2026-11-14",
+        "local_file": "/attachments/WhatsApp_Video_2026-11-14_Felicitas_Ocampo_bug.mp4",
+        "file_url": "/attachments/WhatsApp_Video_2026-11-14_Felicitas_Ocampo_bug.mp4"
+      },
+      "leader_feedback": {
+        "submitted": true,
+        "value": "4 evaluaciones de líderes (11/11)"
+      },
+      "completed_count": 3,
+      "status": "complete",
+      "last_email_date": "2026-11-14",
+      "notes": "Entrega completa (3/3) el 14/11 + evaluaciones de líderes el 11/11."
+    },
+    {
+      "student_id": "s-207ebafb",
+      "student_name": "Aguilar, Thiago",
+      "group_id": 13,
+      "group_name": "Microchanges",
+      "tasks_pdf": {
+        "submitted": true,
+        "value": "ticketsmultica.pdf",
+        "date": "2026-11-17",
+        "local_file": "/attachments/ticketsmultica_Thiago_Aguilar.pdf",
+        "file_url": "/attachments/ticketsmultica_Thiago_Aguilar.pdf"
+      },
+      "demo_video": {
+        "submitted": true,
+        "value": "https://drive.google.com/file/d/1ccNRVn8rdiVaKxW9FD6wWL7M9iUGM5dD/view?usp=drive_web (Demo_MicroChangas_con_audio.mp4)",
+        "date": "2026-11-17",
+        "local_file": "/attachments/Demo_MicroChangas_con_audio_Thiago_Aguilar.mp4",
+        "file_url": "/attachments/Demo_MicroChangas_con_audio_Thiago_Aguilar.mp4"
+      },
+      "bug_video": {
+        "submitted": true,
+        "value": "WhatsApp Video 2026-11-11 at 20.41.27.mp4",
+        "date": "2026-11-11",
+        "local_file": "/attachments/WhatsApp_Video_2026-11-11_Thiago_Aguilar_bug.mp4",
+        "file_url": "/attachments/WhatsApp_Video_2026-11-11_Thiago_Aguilar_bug.mp4"
+      },
+      "leader_feedback": {
+        "submitted": true,
+        "value": "https://docs.google.com/spreadsheets/d/1KRE5YWTrubXSl-dmfwiWYhtVOPbCoGJS6F-c_VXixqs/edit?usp=sharing"
+      },
+      "completed_count": 3,
+      "status": "complete",
+      "last_email_date": "2026-11-17",
+      "notes": "Entrega completa (3/3): PDF con tickets y video demo en Google Drive (17/11), video de bug y feedback de líderes (11/11)."
+    },
+    {
+      "student_id": "s-1e48eeb3",
+      "student_name": "Zuñiga, Máximo",
+      "group_id": 13,
+      "group_name": "Microchanges",
+      "tasks_pdf": {
+        "submitted": true,
+        "value": "Documentacion_tickets_MaximoZuñigaRicardi.pdf",
+        "date": "2026-11-17",
+        "local_file": "/attachments/Documentacion_tickets_Maximo_Zuniga_Ricardi.pdf",
+        "file_url": "/attachments/Documentacion_tickets_Maximo_Zuniga_Ricardi.pdf"
+      },
+      "demo_video": {
+        "submitted": false,
+        "value": "",
+        "date": null
+      },
+      "bug_video": {
+        "submitted": true,
+        "value": "https://alumniiaeedu-my.sharepoint.com/:v:/g/personal/mjzunigaricardi_mail_austral_edu_ar/IQDAJGmGXbRKQJBI27rcDlHJATEPJkPKV-z97G_M1ol7zZM?referrer=Outlook.Web&referrerScenario=email-linkwithembed",
+        "date": "2026-11-17"
+      },
+      "leader_feedback": {
+        "submitted": true,
+        "value": "Feedback_Lideres_5to_Lab2*.pdf (4 PDFs)"
+      },
+      "completed_count": 2,
+      "status": "partial",
+      "last_email_date": "2026-11-17",
+      "notes": "Envió video del bug (SharePoint: Bug_Microchangas_CalificacionWorker.mp4) y documentación de tickets en PDF el 17/11. Falta video demo del producto (notificó que lo envía mañana por recuperatorio)."
+    },
+    {
+      "student_id": "s-e007c12e",
+      "student_name": "Recio Ojeda, Matias",
+      "group_id": 14,
+      "group_name": "Vaiven",
+      "tasks_pdf": {
+        "submitted": false,
+        "value": "",
+        "date": null
+      },
+      "demo_video": {
+        "submitted": false,
+        "value": "",
+        "date": null
+      },
+      "bug_video": {
+        "submitted": true,
+        "value": "https://www.youtube.com/watch?v=RgyqhGQQ2bw",
+        "date": "2026-11-11"
+      },
+      "leader_feedback": {
+        "submitted": true,
+        "value": "Mati-Feedback_Lideres_5to_Lab2_corregido.xlsx"
+      },
+      "completed_count": 1,
+      "status": "partial",
+      "last_email_date": "2026-11-11",
+      "notes": "Envió update, link YouTube/Drive del bug (2026-11-11 16-36-12.mp4) y Excel el 11/11. Faltan PDF de tareas y video demo."
+    },
+    {
+      "student_id": "s-744e549a",
+      "student_name": "Rivas Patrese, Victoria",
+      "group_id": 14,
+      "group_name": "Vaiven",
+      "tasks_pdf": {
+        "submitted": true,
+        "value": "https://alumniiaeedu-my.sharepoint.com/:b:/g/personal/vrivaspatrese_mail_austral_edu_ar/IQCg8sn8cYKTS6iRGVspYbfsAVLB72N8YHNEser3QsljSh8 (resumen-semanal-victoria-rivas.pdf)",
+        "date": "2026-11-18"
+      },
+      "demo_video": {
+        "submitted": true,
+        "value": "https://youtu.be/SVdyB-fL8vc",
+        "date": "2026-11-18"
+      },
+      "bug_video": {
+        "submitted": true,
+        "value": "https://youtu.be/I1fMiOdVTH4",
+        "date": "2026-11-09"
+      },
+      "leader_feedback": {
+        "submitted": true,
+        "value": "Feedback_Lideres_5to_Lab2_Victoria_Rivas_Patrese.xlsx"
+      },
+      "completed_count": 3,
+      "status": "complete",
+      "last_email_date": "2026-11-18",
+      "notes": "Entrega completa (3/3): demo en YouTube (SVdyB-fL8vc) y PDF de tareas en SharePoint (18/11); video de bug en YouTube (I1fMiOdVTH4) y feedback de líderes con nota 10/10."
+    },
+    {
+      "student_id": "s-9bc06488",
+      "student_name": "Calvani, Luciano",
+      "group_id": 15,
+      "group_name": "Futtracker",
+      "tasks_pdf": {
+        "submitted": false,
+        "value": "",
+        "date": null
+      },
+      "demo_video": {
+        "submitted": false,
+        "value": "",
+        "date": null
+      },
+      "bug_video": {
+        "submitted": false,
+        "value": "",
+        "date": null
+      },
+      "leader_feedback": {
+        "submitted": false,
+        "value": ""
+      },
+      "completed_count": 0,
+      "status": "missing",
+      "last_email_date": null,
+      "notes": "No envió correos en noviembre."
+    },
+    {
+      "student_id": "s-988fb090",
+      "student_name": "Pyznar, Facundo",
+      "group_id": 15,
+      "group_name": "Futtracker",
+      "tasks_pdf": {
+        "submitted": false,
+        "value": "",
+        "date": null
+      },
+      "demo_video": {
+        "submitted": false,
+        "value": "",
+        "date": null
+      },
+      "bug_video": {
+        "submitted": false,
+        "value": "",
+        "date": null
+      },
+      "leader_feedback": {
+        "submitted": true,
+        "value": "Feedback_Lideres_5to_Lab2.xlsx"
+      },
+      "completed_count": 0,
+      "status": "missing",
+      "last_email_date": "2026-11-11",
+      "notes": "Envió update escrito y Excel de líderes el 11/11. Faltan PDF de tareas, video demo y video bug."
+    },
+    {
+      "student_id": "s-00f4b5a0",
+      "student_name": "Ledesma, Nicolas",
+      "group_id": 16,
+      "group_name": "Eureka",
+      "tasks_pdf": {
+        "submitted": false,
+        "value": "",
+        "date": null
+      },
+      "demo_video": {
+        "submitted": false,
+        "value": "",
+        "date": null
+      },
+      "bug_video": {
+        "submitted": true,
+        "value": "bug-otp-demo.mp4",
+        "date": "2026-11-11"
+      },
+      "leader_feedback": {
+        "submitted": true,
+        "value": "Feedback_Lideres_5to_Lab2_Ledesma.xlsx"
+      },
+      "completed_count": 1,
+      "status": "partial",
+      "last_email_date": "2026-11-11",
+      "notes": "Envió update, video del bug (bug-otp-demo.mp4) y Excel de líderes el 11/11. Faltan PDF de tareas y video demo."
+    },
+    {
+      "student_id": "s-afd81e77",
+      "student_name": "Tassello, Juan Bautista",
+      "group_id": 16,
+      "group_name": "Eureka",
+      "tasks_pdf": {
+        "submitted": true,
+        "value": "Tareas - Juan Bautista Tassello.pdf",
+        "date": "2026-11-17",
+        "local_file": "/attachments/Tareas_Juan_Bautista_Tassello.pdf",
+        "file_url": "/attachments/Tareas_Juan_Bautista_Tassello.pdf"
+      },
+      "demo_video": {
+        "submitted": true,
+        "value": "https://youtu.be/Ac4x2Z6OFlQ",
+        "date": "2026-11-17"
+      },
+      "bug_video": {
+        "submitted": true,
+        "value": "https://youtu.be/mC_aSk3-mLY?si=AICvHGRZNWLEFbBX",
+        "date": "2026-11-11"
+      },
+      "leader_feedback": {
+        "submitted": true,
+        "value": "Feedback_Lideres_5to_Lab2.xlsx"
+      },
+      "completed_count": 3,
+      "status": "complete",
+      "last_email_date": "2026-11-17",
+      "notes": "Entrega completa (3/3): PDF de tareas y video demo en YouTube (17/11), video de bug en YouTube y feedback de líderes (11/11)."
+    }
+  ]
+}
