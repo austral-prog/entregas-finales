@@ -33,12 +33,25 @@ try:
 except Exception:
     formatted_date = updated_at_raw
 
-# Sort deliverables: students with pending items (< 3) FIRST, then completed students
+# Compute submitted count out of 4 (tasks_pdf, demo_video, bug_video, leader_feedback)
+TOTAL_ITEMS_PER_STUDENT = 4
+
+for s in deliverables_raw:
+    pdf = s.get("tasks_pdf", {}).get("submitted", False)
+    demo = s.get("demo_video", {}).get("submitted", False)
+    bug = s.get("bug_video", {}).get("submitted", False)
+    fb = s.get("leader_feedback", {}).get("submitted", False)
+    
+    count_4 = sum([1 if x else 0 for x in [pdf, demo, bug, fb]])
+    s["count_4"] = count_4
+    s["is_complete_4"] = (count_4 == TOTAL_ITEMS_PER_STUDENT)
+
+# Sort deliverables: students with pending items (< 4) FIRST, then completed students
 # Within pending: fewest completed first, then alphabetical by name
 # Within completed: alphabetical by name
 def student_sort_key(s):
-    is_pending = 0 if s.get("completed_count", 0) < 3 else 1
-    count = s.get("completed_count", 0)
+    is_pending = 0 if not s["is_complete_4"] else 1
+    count = s["count_4"]
     name = s.get("student_name", "")
     return (is_pending, count, name)
 
@@ -46,9 +59,9 @@ deliverables = sorted(deliverables_raw, key=student_sort_key)
 
 # Dynamic stats calculations
 total_students = len(deliverables)
-complete_students = sum(1 for d in deliverables if d.get("completed_count", 0) == 3)
-partial_students = sum(1 for d in deliverables if 0 < d.get("completed_count", 0) < 3)
-missing_students = sum(1 for d in deliverables if d.get("completed_count", 0) == 0)
+complete_students = sum(1 for d in deliverables if d["is_complete_4"])
+partial_students = sum(1 for d in deliverables if 0 < d["count_4"] < TOTAL_ITEMS_PER_STUDENT)
+missing_students = sum(1 for d in deliverables if d["count_4"] == 0)
 pending_total = partial_students + missing_students
 complete_pct = round((complete_students / total_students * 100), 1) if total_students > 0 else 0
 pending_pct = round((pending_total / total_students * 100), 1) if total_students > 0 else 0
@@ -56,17 +69,18 @@ pending_pct = round((pending_total / total_students * 100), 1) if total_students
 needs_pdf_count = sum(1 for d in deliverables if not d.get("tasks_pdf", {}).get("submitted", False))
 needs_demo_count = sum(1 for d in deliverables if not d.get("demo_video", {}).get("submitted", False))
 needs_bug_count = sum(1 for d in deliverables if not d.get("bug_video", {}).get("submitted", False))
+needs_feedback_count = sum(1 for d in deliverables if not d.get("leader_feedback", {}).get("submitted", False))
 
-# Group mapping and stats
+# Group mapping and stats (out of 4 items per student)
 group_stats = []
 for g in groups:
     gid = g["id"]
     gname = g["name"]
     students_in_g = [d for d in deliverables if d.get("group_id") == gid]
     tot_st = len(students_in_g)
-    comp_st = sum(1 for d in students_in_g if d.get("completed_count", 0) == 3)
-    exp_items = tot_st * 3
-    sub_items = sum(d.get("completed_count", 0) for d in students_in_g)
+    comp_st = sum(1 for d in students_in_g if d["is_complete_4"])
+    exp_items = tot_st * TOTAL_ITEMS_PER_STUDENT
+    sub_items = sum(d["count_4"] for d in students_in_g)
     pct = round((sub_items / exp_items * 100), 1) if exp_items > 0 else 0
     has_pending = comp_st < tot_st
 
@@ -101,6 +115,7 @@ summary = {
     "needs_pdf": needs_pdf_count,
     "needs_demo": needs_demo_count,
     "needs_bug": needs_bug_count,
+    "needs_feedback": needs_feedback_count,
     "complete_groups": complete_groups_count,
     "total_groups": total_groups_count
 }
@@ -117,7 +132,7 @@ html_template = f"""<!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Control de Entregas Finales | DCP — Universidad Austral</title>
+  <title>Control de Entregas Finales | Laboratorio 2 — Universidad Austral</title>
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -150,14 +165,11 @@ html_template = f"""<!DOCTYPE html>
             <span>•</span>
             <span>Facultad de Ingeniería</span>
             <span>•</span>
-            <span class="text-slate-300">DCP / Laboratorio II</span>
+            <span class="text-slate-300">Laboratorio 2</span>
           </div>
           <h1 class="text-2xl sm:text-3xl font-bold tracking-tight text-white">
             Panel de Entregas Finales
           </h1>
-          <p class="text-slate-400 text-xs sm:text-sm mt-1 max-w-2xl">
-            Seguimiento de requisitos obligatorios de cursada: PDF de tareas individuales, video de demostración y video de bug.
-          </p>
         </div>
         <div class="flex items-center gap-3">
           <div class="bg-slate-800/80 border border-slate-700/80 rounded-xl px-4 py-2 text-right">
@@ -187,7 +199,7 @@ html_template = f"""<!DOCTYPE html>
 
       <div class="bg-white rounded-xl p-5 border border-slate-200/90 shadow-sm">
         <div class="flex items-center justify-between">
-          <span class="text-xs font-semibold uppercase tracking-wider text-slate-500">Completos (3/3)</span>
+          <span class="text-xs font-semibold uppercase tracking-wider text-slate-500">Completos (4/4)</span>
           <span class="text-[11px] font-bold px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800">{complete_pct}%</span>
         </div>
         <div class="text-3xl font-bold text-emerald-700 mt-2">{complete_students}</div>
@@ -216,7 +228,7 @@ html_template = f"""<!DOCTYPE html>
     <!-- Global Progress Bar -->
     <section class="bg-white rounded-xl p-4 sm:p-5 border border-slate-200/90 shadow-sm">
       <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-2.5">
-        <span class="text-xs font-semibold uppercase tracking-wider text-slate-600">Progreso General del Curso</span>
+        <span class="text-xs font-semibold uppercase tracking-wider text-slate-600">Progreso General de la Cursada</span>
         <span class="text-xs font-semibold text-slate-600">
           <strong class="text-emerald-700">{complete_students} al día ({complete_pct}%)</strong> • 
           <strong class="text-amber-700">{pending_total} con pendientes ({pending_pct}%)</strong>
@@ -343,7 +355,7 @@ html_template = f"""<!DOCTYPE html>
   <!-- Footer -->
   <footer class="bg-white border-t border-slate-200 mt-auto py-6">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-xs text-slate-400 space-y-1">
-      <p>Diseño y Construcción de Software • Cátedra de Laboratorio II • Facultad de Ingeniería • Universidad Austral</p>
+      <p>Laboratorio 2 • Facultad de Ingeniería • Universidad Austral</p>
       <p>Panel informativo actualizado a partir de las entregas formales remitidas al equipo docente.</p>
     </div>
   </footer>
@@ -404,17 +416,17 @@ html_template = f"""<!DOCTYPE html>
     }}
 
     function renderStatusPill(count) {{
-      if (count === 3) {{
+      if (count === 4) {{
         return `<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-emerald-100 text-emerald-800">
-                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span> 3/3 Completo
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span> 4/4 Completo
                 </span>`;
       }} else if (count > 0) {{
         return `<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-amber-100 text-amber-800">
-                  <span class="w-1.5 h-1.5 rounded-full bg-amber-600"></span> ${{count}}/3 Parcial
+                  <span class="w-1.5 h-1.5 rounded-full bg-amber-600"></span> ${{count}}/4 Parcial
                 </span>`;
       }} else {{
         return `<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-rose-100 text-rose-800">
-                  <span class="w-1.5 h-1.5 rounded-full bg-rose-600"></span> 0/3 Sin Entrega
+                  <span class="w-1.5 h-1.5 rounded-full bg-rose-600"></span> 0/4 Sin Entrega
                 </span>`;
       }}
     }}
@@ -452,8 +464,8 @@ html_template = f"""<!DOCTYPE html>
         }}
 
         // Pill filter
-        if (currentFilter === 'pending' && item.completed_count === 3) return false;
-        if (currentFilter === 'complete' && item.completed_count !== 3) return false;
+        if (currentFilter === 'pending' && item.is_complete_4) return false;
+        if (currentFilter === 'complete' && !item.is_complete_4) return false;
         if (currentFilter === 'needs-pdf' && item.tasks_pdf.submitted) return false;
         if (currentFilter === 'needs-demo' && item.demo_video.submitted) return false;
         if (currentFilter === 'needs-bug' && item.bug_video.submitted) return false;
@@ -470,14 +482,14 @@ html_template = f"""<!DOCTYPE html>
         return true;
       }});
 
-      // Always sort filtered list: students with pending items (< 3) FIRST
+      // Always sort filtered list: students with pending items (< 4) FIRST
       filtered.sort((a, b) => {{
-        const aPending = a.completed_count < 3 ? 0 : 1;
-        const bPending = b.completed_count < 3 ? 0 : 1;
+        const aPending = !a.is_complete_4 ? 0 : 1;
+        const bPending = !b.is_complete_4 ? 0 : 1;
         if (aPending !== bPending) return aPending - bPending;
         if (aPending === 0) {{
-          if (a.completed_count !== b.completed_count) {{
-            return a.completed_count - b.completed_count;
+          if (a.count_4 !== b.count_4) {{
+            return a.count_4 - b.count_4;
           }}
         }}
         return a.student_name.localeCompare(b.student_name);
@@ -501,7 +513,7 @@ html_template = f"""<!DOCTYPE html>
       noResults.classList.add('hidden');
 
       list.forEach(s => {{
-        const isPending = s.completed_count < 3;
+        const isPending = !s.is_complete_4;
         const tr = document.createElement('tr');
         
         // Highlight pending students cleanly
@@ -530,15 +542,10 @@ html_template = f"""<!DOCTYPE html>
             ${{renderItemBadge(s.bug_video)}}
           </td>
           <td class="py-3 px-3 text-center whitespace-nowrap">
-            ${{s.leader_feedback && s.leader_feedback.submitted ? 
-              `<span class="inline-flex items-center gap-1 text-slate-700 text-xs font-medium bg-slate-100 px-2 py-0.5 rounded border border-slate-200">
-                 <svg class="w-3 h-3 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                 <span>Recibido</span>
-               </span>` : 
-              `<span class="text-slate-400 text-xs">—</span>`}}
+            ${{renderItemBadge(s.leader_feedback)}}
           </td>
           <td class="py-3 px-4 text-center whitespace-nowrap">
-            ${{renderStatusPill(s.completed_count)}}
+            ${{renderStatusPill(s.count_4)}}
           </td>
         `;
         tbody.appendChild(tr);
@@ -584,15 +591,15 @@ html_template = f"""<!DOCTYPE html>
 
         let membersHtml = '';
         g.students.forEach(st => {{
-          const count = st.completed_count;
-          const isPending = count < 3;
+          const count = st.count_4;
+          const isPending = !st.is_complete_4;
           const badgeClass = isPending ? 'bg-amber-50 border-amber-200 text-amber-900' : 'bg-slate-50 border-slate-200 text-slate-800';
 
           membersHtml += `
             <div class="p-2.5 rounded-lg border ${{badgeClass}} text-xs space-y-1">
               <div class="flex items-center justify-between font-semibold">
                 <span>${{st.student_name}}</span>
-                <span class="text-[11px] font-bold ${{isPending ? 'text-amber-700' : 'text-emerald-700'}}">${{count}}/3</span>
+                <span class="text-[11px] font-bold ${{isPending ? 'text-amber-700' : 'text-emerald-700'}}">${{count}}/4</span>
               </div>
               <div class="flex items-center gap-2 text-[10px] pt-0.5 text-slate-500 font-medium">
                 <span class="${{st.tasks_pdf.submitted ? 'text-emerald-700 font-semibold' : 'text-rose-600 font-semibold'}}">${{st.tasks_pdf.submitted ? '✓' : '✕'}} PDF</span>
@@ -600,6 +607,8 @@ html_template = f"""<!DOCTYPE html>
                 <span class="${{st.demo_video.submitted ? 'text-emerald-700 font-semibold' : 'text-rose-600 font-semibold'}}">${{st.demo_video.submitted ? '✓' : '✕'}} Demo</span>
                 <span>•</span>
                 <span class="${{st.bug_video.submitted ? 'text-emerald-700 font-semibold' : 'text-rose-600 font-semibold'}}">${{st.bug_video.submitted ? '✓' : '✕'}} Bug</span>
+                <span>•</span>
+                <span class="${{st.leader_feedback && st.leader_feedback.submitted ? 'text-emerald-700 font-semibold' : 'text-rose-600 font-semibold'}}">${{st.leader_feedback && st.leader_feedback.submitted ? '✓' : '✕'}} Feedback</span>
               </div>
             </div>
           `;
@@ -667,9 +676,10 @@ html_template = f"""<!DOCTYPE html>
         if (!st.tasks_pdf.submitted) missing.push('PDF de Tareas');
         if (!st.demo_video.submitted) missing.push('Video Demo');
         if (!st.bug_video.submitted) missing.push('Video Bug');
+        if (!st.leader_feedback || !st.leader_feedback.submitted) missing.push('Feedback Líderes');
 
         if (missing.length === 0) {{
-          text += `• ${{st.student_name}}: 3/3 Completo\\n`;
+          text += `• ${{st.student_name}}: 4/4 Completo\\n`;
         }} else {{
           text += `• ${{st.student_name}}: Debe ${{missing.join(', ')}}\\n`;
         }}
@@ -679,17 +689,18 @@ html_template = f"""<!DOCTYPE html>
     }}
 
     function copyGeneralReport() {{
-      let text = `Reporte de Entregas Finales — DCP (${{APP_DATA.updated_at}})\\n\\n`;
+      let text = `Reporte de Entregas Finales — Laboratorio 2 (${{APP_DATA.updated_at}})\\n\\n`;
       text += `• Alumnos Totales: ${{APP_DATA.summary.total_students}}\\n`;
-      text += `• Completos (3/3): ${{APP_DATA.summary.complete}} (${{APP_DATA.summary.complete_percentage}}%)\\n`;
+      text += `• Completos (4/4): ${{APP_DATA.summary.complete}} (${{APP_DATA.summary.complete_percentage}}%)\\n`;
       text += `• Con Pendientes: ${{APP_DATA.summary.pending_total}} (${{APP_DATA.summary.pending_percentage}}%)\\n\\n`;
       text += `Alumnos con entregas pendientes:\\n`;
 
-      APP_DATA.deliverables.filter(d => d.completed_count < 3).forEach(d => {{
+      APP_DATA.deliverables.filter(d => !d.is_complete_4).forEach(d => {{
         const missing = [];
         if (!d.tasks_pdf.submitted) missing.push('PDF');
         if (!d.demo_video.submitted) missing.push('Demo');
         if (!d.bug_video.submitted) missing.push('Bug');
+        if (!d.leader_feedback || !d.leader_feedback.submitted) missing.push('Feedback');
         text += `- ${{d.student_name}} (${{d.group_name}}): Debe ${{missing.join(' + ')}}\\n`;
       }});
 
@@ -697,23 +708,24 @@ html_template = f"""<!DOCTYPE html>
     }}
 
     function exportCSV() {{
-      const headers = ['Alumno', 'Grupo', 'PDF Tareas', 'Video Demo', 'Video Bug', 'Feedback Lideres', 'Completados', 'Estado'];
+      const headers = ['Alumno', 'Grupo', 'PDF Tareas', 'Video Demo', 'Video Bug', 'Feedback Lideres', 'Entregas Realizadas', 'Total Exigido', 'Estado'];
       const rows = APP_DATA.deliverables.map(d => [
         `"${{d.student_name}}"`,
         `"${{d.group_name}}"`,
         d.tasks_pdf.submitted ? 'Entregado' : 'Pendiente',
         d.demo_video.submitted ? 'Entregado' : 'Pendiente',
         d.bug_video.submitted ? 'Entregado' : 'Pendiente',
-        d.leader_feedback && d.leader_feedback.submitted ? 'Recibido' : 'No',
-        d.completed_count,
-        d.completed_count === 3 ? 'Completo' : 'Parcial'
+        d.leader_feedback && d.leader_feedback.submitted ? 'Entregado' : 'Pendiente',
+        d.count_4,
+        4,
+        d.is_complete_4 ? 'Completo' : 'Parcial'
       ]);
 
       const csvContent = 'data:text/csv;charset=utf-8,\uFEFF' + [headers.join(','), ...rows.map(r => r.join(','))].join('\\n');
       const encodedUri = encodeURI(csvContent);
       const link = document.createElement('a');
       link.setAttribute('href', encodedUri);
-      link.setAttribute('download', `entregas_finales_dcp.csv`);
+      link.setAttribute('download', `entregas_finales_lab2.csv`);
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
