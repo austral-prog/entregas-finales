@@ -1,0 +1,290 @@
+{
+  "groups": [
+    {
+      "id": 1,
+      "name": "Cinematch",
+      "students": [
+        {
+          "id": "s-d0c077a9",
+          "name": "De Franco, Candela",
+          "role": "developer"
+        },
+        {
+          "id": "s-828aaf07",
+          "name": "Bautista Dhipolito",
+          "role": "developer"
+        },
+        {
+          "id": "s-913c4935",
+          "name": "Caporaso Tomas",
+          "role": "developer"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Zest",
+      "students": [
+        {
+          "id": "s-d2a09c12",
+          "name": "Serebrinsky Thiago",
+          "role": "developer"
+        },
+        {
+          "id": "s-fc49a4d9",
+          "name": "Blanco Pan Santiago",
+          "role": "developer"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Planify",
+      "students": [
+        {
+          "id": "s-723e58fc",
+          "name": "Zampella Lucio",
+          "role": "developer"
+        },
+        {
+          "id": "s-7173e477",
+          "name": "Betelu Gallipoli Lucia",
+          "role": "developer"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Pitstop",
+      "students": [
+        {
+          "id": "s-94b46f72",
+          "name": "García Ferrer, Juan Cruz",
+          "role": "developer"
+        },
+        {
+          "id": "s-843fa4af",
+          "name": "Gioino, Juan Manuel",
+          "role": "developer"
+        },
+        {
+          "id": "s-352c3099",
+          "name": "Siaba, Ignacio",
+          "role": "developer"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Watch Party",
+      "students": [
+        {
+          "id": "s-df6f3dd5",
+          "name": "Cousido, Martina",
+          "role": "developer"
+        },
+        {
+          "id": "s-7faf0b32",
+          "name": "Garcia, Ignacio",
+          "role": "developer"
+        },
+        {
+          "id": "s-35ff39a5",
+          "name": "Scherer Keen, Tomas",
+          "role": "developer"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Nutria",
+      "students": [
+        {
+          "id": "s-84e2c26f",
+          "name": "Cesio, Fernando",
+          "role": "developer"
+        },
+        {
+          "id": "s-a2a9a932",
+          "name": "Fedunkiw, Lara",
+          "role": "developer"
+        },
+        {
+          "id": "s-57345877",
+          "name": "Rosales Torres, María José",
+          "role": "developer"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Study Arena",
+      "students": [
+        {
+          "id": "s-06776766",
+          "name": "Martinez, Trinidad",
+          "role": "developer"
+        },
+        {
+          "id": "s-7740dd32",
+          "name": "Seré, Juan José",
+          "role": "developer"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Grade-m8",
+      "students": [
+        {
+          "id": "s-16bf763e",
+          "name": "Bregoli, Tomas",
+          "role": "developer"
+        },
+        {
+          "id": "s-a33a0a28",
+          "name": "García Rosselli, Facundo",
+          "role": "developer"
+        },
+        {
+          "id": "s-8b3acdf1",
+          "name": "Luciano Renkine",
+          "role": "developer"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Zervi",
+      "students": [
+        {
+          "id": "s-d8f47780",
+          "name": "Acha Kennard, Mateo",
+          "role": "developer"
+        },
+        {
+          "id": "s-ee54cc5c",
+          "name": "Perez Menendez, Matias",
+          "role": "developer"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Conexia",
+      "students": [
+        {
+          "id": "s-a1b3963a",
+          "name": "Hani, Guadalupe",
+          "role": "developer"
+        },
+        {
+          "id": "s-871d0471",
+          "name": "Nogueira, Martiniano",
+          "role": "developer"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Sportmatch",
+      "students": [
+        {
+          "id": "s-c11a7244",
+          "name": "Juan Rudolph",
+          "role": "developer"
+        },
+        {
+          "id": "s-a647d8da",
+          "name": "Pacheco, Ignacio",
+          "role": "developer"
+        },
+        {
+          "id": "s-0768e5d4",
+          "name": "Siaba, Juan Francisco",
+          "role": "developer"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Splitit",
+      "students": [
+        {
+          "id": "s-8a942c0d",
+          "name": "Diaz, Mateo",
+          "role": "developer"
+        },
+        {
+          "id": "s-26292f16",
+          "name": "Ocampo, Felicitas",
+          "role": "developer"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Microchanges",
+      "students": [
+        {
+          "id": "s-207ebafb",
+          "name": "Aguilar, Thiago",
+          "role": "developer"
+        },
+        {
+          "id": "s-1e48eeb3",
+          "name": "Zuñiga, Máximo",
+          "role": "developer"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Vaiven",
+      "students": [
+        {
+          "id": "s-e007c12e",
+          "name": "Recio Ojeda, Matias",
+          "role": "developer"
+        },
+        {
+          "id": "s-744e549a",
+          "name": "Rivas Patrese, Victoria",
+          "role": "developer"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Futtracker",
+      "students": [
+        {
+          "id": "s-9bc06488",
+          "name": "Calvani, Luciano",
+          "role": "developer"
+        },
+        {
+          "id": "s-988fb090",
+          "name": "Pyznar, Facundo",
+          "role": "developer"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Eureka",
+      "students": [
+        {
+          "id": "s-00f4b5a0",
+          "name": "Ledesma, Nicolas",
+          "role": "developer"
+        },
+        {
+          "id": "s-afd81e77",
+          "name": "Tassello, Juan Bautista",
+          "role": "developer"
+        }
+      ]
+    }
+  ]
+}
