@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-11-19T09:49:00-03:00",
+  "updated_at": "2026-11-19T10:05:00-03:00",
   "summary": {
     "total_students": 38,
-    "complete": 34,
-    "partial": 4,
+    "complete": 35,
+    "partial": 3,
     "missing": 0,
-    "complete_percentage": 89.5
+    "complete_percentage": 92.1
   },
   "deliverables": [
     {
@@ -45,9 +45,11 @@
       "group_id": 1,
       "group_name": "Cinematch",
       "tasks_pdf": {
-        "submitted": false,
-        "value": "",
-        "date": null
+        "submitted": true,
+        "value": "Mis_Tareas_de_Linear_Cinematch_Bautista_DHipolito.pdf",
+        "date": "2026-11-19",
+        "local_file": "/attachments/Mis_Tareas_de_Linear_Cinematch_Bautista_DHipolito.pdf",
+        "file_url": "/attachments/Mis_Tareas_de_Linear_Cinematch_Bautista_DHipolito.pdf"
       },
       "demo_video": {
         "submitted": true,
@@ -63,10 +65,10 @@
         "submitted": true,
         "value": "Feedback_Lideres_5to_Lab2-Bautista DHipolito.xlsx"
       },
-      "completed_count": 2,
-      "status": "partial",
-      "last_email_date": "2026-11-15",
-      "notes": "Envió video unificado (YouTube: demo + bug + explicación de tareas) y Excel de feedback el 15/11. Queda pendiente la recepción del documento PDF con el detalle de tareas."
+      "completed_count": 3,
+      "status": "complete",
+      "last_email_date": "2026-11-19",
+      "notes": "Entrega completa (3/3): PDF de tareas de Linear adjunto el 19/11 (Mis Tareas de Linear - Cinematch.pdf), video unificado de demo+bug y feedback de líderes."
     },
     {
       "student_id": "s-913c4935",
