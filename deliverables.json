@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-11-19T15:50:00",
+  "updated_at": "2026-11-20T08:55:00",
   "summary": {
     "total_students": 38,
-    "complete": 36,
-    "partial": 2,
+    "complete": 38,
+    "partial": 0,
     "missing": 0,
-    "complete_percentage": 94.7
+    "complete_percentage": 100.0
   },
   "deliverables": [
     {
@@ -200,9 +200,11 @@
       "group_id": 3,
       "group_name": "Planify",
       "tasks_pdf": {
-        "submitted": false,
-        "value": "",
-        "date": null
+        "submitted": true,
+        "value": "informe_tareas_individual_lucia_betelu.pdf",
+        "date": "2026-11-20",
+        "local_file": "/attachments/informe_tareas_individual_lucia_betelu.pdf",
+        "file_url": "/attachments/informe_tareas_individual_lucia_betelu.pdf"
       },
       "demo_video": {
         "submitted": true,
@@ -210,18 +212,18 @@
         "date": "2026-11-16"
       },
       "bug_video": {
-        "submitted": false,
-        "value": "",
-        "date": null
+        "submitted": true,
+        "value": "Screen Recording 2026-11-19 at 5.01.32 PM.mov (Clipchamp/SharePoint)",
+        "date": "2026-11-20"
       },
       "leader_feedback": {
         "submitted": true,
         "value": "Feedback_Lideres_5to_Lab2_PLANIFY.xlsx (en copia)"
       },
-      "completed_count": 1,
-      "status": "partial",
-      "last_email_date": "2026-11-16",
-      "notes": "Envió Screen Recording .mov el 16/11; faltan el otro video y el PDF de tareas."
+      "completed_count": 3,
+      "status": "complete",
+      "last_email_date": "2026-11-20",
+      "notes": "Entrega completa (4/4): PDF de tareas individuales, video demo, video de bug y evaluación de líderes."
     },
     {
       "student_id": "s-94b46f72",
@@ -1000,9 +1002,9 @@
         "file_url": "/attachments/Documentacion_tickets_Maximo_Zuniga_Ricardi.pdf"
       },
       "demo_video": {
-        "submitted": false,
-        "value": "",
-        "date": null
+        "submitted": true,
+        "value": "demo_Máximo Zúñiga 1.mp4 (SharePoint)",
+        "date": "2026-11-20"
       },
       "bug_video": {
         "submitted": true,
@@ -1013,10 +1015,10 @@
         "submitted": true,
         "value": "Feedback_Lideres_5to_Lab2*.pdf (4 PDFs)"
       },
-      "completed_count": 2,
-      "status": "partial",
-      "last_email_date": "2026-11-17",
-      "notes": "Envió video del bug (SharePoint: Bug_Microchangas_CalificacionWorker.mp4) y documentación de tickets en PDF el 17/11. Falta video demo del producto (notificó que lo envía mañana por recuperatorio)."
+      "completed_count": 3,
+      "status": "complete",
+      "last_email_date": "2026-11-20",
+      "notes": "Entrega completa (4/4): Documentación de tickets en PDF, video demo del producto en SharePoint, video de bug y feedback de líderes."
     },
     {
       "student_id": "s-e007c12e",
